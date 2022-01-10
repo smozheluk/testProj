@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {LessonUseMemo} from "./components/LessonUseMemo/LessonUseMemo";
+import {LessonUseEffect} from "./components/LessonUseEffect/LessonUseEffect";
+import {Clock} from "./components/LessonUseEffect/Clock";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <LessonUseMemo/>
+            <hr/>
+            <LessonUseEffect />
+            <hr/>
+            <Clock />
+        </div>
+    );
 }
 
 export default App;
